@@ -5,7 +5,7 @@ by: Abdifatah A
 """
 import random
 
-#empty board list
+#empty board list from the tutorial 
 empty_board = ["-", "-", "-",
                 "-", "-", "-",
                 "-", "-", "-"]
@@ -40,7 +40,7 @@ def play_game():
     elif who_won == None:
         print('the game is tie good luck next time.')
 
-# displays the game board with instructions    
+# displays the game board with instructions used tutorial for display board function
 def display_board():
     print(f'| {empty_board[0]} | {empty_board[1]} | {empty_board[2]} |     | 1 | 2 | 3')
     print(f'| {empty_board[3]} | {empty_board[4]} | {empty_board[5]} |     | 4 | 5 | 6')
@@ -105,10 +105,10 @@ def win():
     else:
         who_won=None
 
-# function that checks if there is row winner
+# function that checks if there is row winner 
 def check_row():
     global continue_the_game
-
+    #used the tutorial as reference.
     row_1 = empty_board[0] == empty_board[1] and empty_board[1] == empty_board[2] and empty_board[2] != "-"
     row_2 = empty_board[3] == empty_board[4] and empty_board[4] == empty_board[5] and empty_board[5] != "-"
     row_3 = empty_board[6] == empty_board[7] and empty_board[7] == empty_board[8] and empty_board[8] != "-"
